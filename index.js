@@ -4,7 +4,7 @@ Number.isInteger = Number.isInteger || function (value) {
         Math.floor(value) === value;
 };
 
-const calculate = function (vector1, vector2, precision=5) {
+const cosDistance = function (vector1, vector2, precision=5) {
     if (!Array.isArray(vector1) || !Array.isArray(vector2)) {
         throw new TypeError('Both vectors must be arrays!');
     }
@@ -47,7 +47,7 @@ const vectorLen = function (vector) {
 }
 
 module.exports = {
-    calculate,
+    cosDistance,
     vectorLen,
     dotProduct
 };
