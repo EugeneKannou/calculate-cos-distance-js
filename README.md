@@ -4,9 +4,10 @@ This little package will help you calculate cos distance between two vectors.
 ## Usage
 `npm i calculate-cos-distance`
 
-Calculates distance between `vector1` and `vector2`, both of them must be arrays of the same length
 
 `cosDistance(vector1, vector2 [, precision])`
+
+Calculates distance between `vector1` and `vector2`, both of them must be arrays of the same length
 
 `precision` is the argument that defines precision of returned number (default = 5)
 
