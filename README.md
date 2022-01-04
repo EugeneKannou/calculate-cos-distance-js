@@ -17,6 +17,15 @@ console.log(cosDistance([1, 2, 3], [3, 2, 1])) // 0.71428;
 console.log(cosDistance([10, -2, 3], [4, 10.23, 1])) // 0.19947;
 console.log(cosDistance([10, -2, 3], [4, 10.23, 1], 10)) // 0.1994690265;
 ```
+or
+```js
+import { cosDistance } from "calculate-cos-distance";
+
+console.log(cosDistance([1, 2, 3], [3, 2, 1])) // 0.71428;
+console.log(cosDistance([10, -2, 3], [4, 10.23, 1])) // 0.19947;
+console.log(cosDistance([10, -2, 3], [4, 10.23, 1])) // 0.1994690265;
+```
+
 
 ## API
 You can use functions that is implemented in lhis library:
