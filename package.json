@@ -1,6 +1,6 @@
 {
   "name": "calculate-cos-distance",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Package that provides three methods for: calculating cos distance, vector length and vector dot product",
   "main": "index.js",
   "homepage": "https://github.com/EugeneKannou/calculate-cos-distance-js",
@@ -8,8 +8,6 @@
     "type": "git",
     "url": "git+https://github.com/EugeneKannou/calculate-cos-distance-js.git"
   },
-  "dependencies": {},
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
