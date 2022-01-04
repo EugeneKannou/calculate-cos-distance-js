@@ -4,7 +4,7 @@ Number.isInteger = Number.isInteger || function (value) {
         Math.floor(value) === value;
 };
 
-const getDistance = function (vector1, vector2) {
+const calculate = function (vector1, vector2) {
     if (!Array.isArray(vector1) || !Array.isArray(vector2)) {
         throw new TypeError('Both vectors must be arrays!');
     }
@@ -24,7 +24,7 @@ const dotProduct = function (vector1, vector2) {
     if (vector1.length !== vector2.length) {
         throw ("Arrays must have equal length!");
     }
-    
+
     let d = 0.0;
     for (let i = 0; i < vector1.length; i++) {
         d += vector1[i] * vector2[i];
@@ -47,7 +47,7 @@ const vectorLen = function (vector) {
 }
 
 module.exports = {
-    getDistance,
+    calculate,
     vectorLen,
     dotProduct
 };
