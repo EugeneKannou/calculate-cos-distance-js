@@ -16,7 +16,7 @@ const calculate = function (vector1, vector2) {
     return (dotProduct(vector1, vector2) / vectorLen(vector1) / vectorLen(vector1));
 }
 
-const dotProduct = function (vector1, vector2) {
+const dotProduct = function (vector1, vector2, precision=5) {
     if (!Array.isArray(vector1) || !Array.isArray(vector2)) {
         throw new TypeError('Both vectors must be arrays!');
     }
@@ -30,7 +30,7 @@ const dotProduct = function (vector1, vector2) {
         d += vector1[i] * vector2[i];
     }
 
-    return d;
+    return d.toPrecision(precision);
 }
 
 const vectorLen = function (vector) {
