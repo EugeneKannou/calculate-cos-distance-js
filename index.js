@@ -4,7 +4,7 @@ Number.isInteger = Number.isInteger || function (value) {
         Math.floor(value) === value;
 };
 
-const calculate = function (vector1, vector2) {
+const calculate = function (vector1, vector2, precision=5) {
     if (!Array.isArray(vector1) || !Array.isArray(vector2)) {
         throw new TypeError('Both vectors must be arrays!');
     }
@@ -13,10 +13,10 @@ const calculate = function (vector1, vector2) {
         throw ("Arrays must have equal length!");
     }
 
-    return (dotProduct(vector1, vector2) / vectorLen(vector1) / vectorLen(vector1));
+    return (dotProduct(vector1, vector2) / vectorLen(vector1) / vectorLen(vector1)).toPrecision(precision);
 }
 
-const dotProduct = function (vector1, vector2, precision=5) {
+const dotProduct = function (vector1, vector2) {
     if (!Array.isArray(vector1) || !Array.isArray(vector2)) {
         throw new TypeError('Both vectors must be arrays!');
     }
@@ -30,7 +30,7 @@ const dotProduct = function (vector1, vector2, precision=5) {
         d += vector1[i] * vector2[i];
     }
 
-    return d.toPrecision(precision);
+    return d;
 }
 
 const vectorLen = function (vector) {
