@@ -2,6 +2,8 @@
 This little package will help you calculate cos distance between two vectors.
 
 ## Usage
+`npm i calculate-cos-distance`
+
 Calculates distance between `vector1` and `vector2`, both of them must be arrays of the same length
 
 `cosDistance(vector1, vector2 [, precision])`
@@ -16,7 +18,7 @@ console.log(cosDistance([10, -2, 3], [4, 10.23, 1])) // 0.19947;
 console.log(cosDistance([10, -2, 3], [4, 10.23, 1])) // 0.1994690265;
 ```
 
-# API
+## API
 You can use functions that is implemented in lhis library:
 
 `dotProduct(vector1, vector2)` will calculate dot product of two vectors
