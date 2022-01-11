@@ -13,7 +13,7 @@ const cosDistance = function (vector1, vector2, precision=5) {
         throw ("Arrays must have equal length!");
     }
 
-    return (dotProduct(vector1, vector2) / vectorLen(vector1) / vectorLen(vector1)).toPrecision(precision);
+    return (dotProduct(vector1, vector2) / vectorLen(vector1) / vectorLen(vector2)).toPrecision(precision);
 }
 
 const dotProduct = function (vector1, vector2) {
